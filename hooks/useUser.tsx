@@ -5,7 +5,7 @@ import {
   User
 } from '@supabase/auth-helpers-react';
 
-import { UserDetails } from '../types';
+import { UserDetails } from '@/types';
 
 type UserContextType = {
   accessToken: string | null;
