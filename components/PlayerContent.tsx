@@ -10,6 +10,7 @@ import Slider from "./Slider";
 import usePlayer from "@/hooks/usePlayer";
 import { useEffect, useState } from "react";
 import useSound from '../node_modules/use-sound'
+import LikeButton from "./LikeButton";
 
 interface PlayerContentProps {
     song:Song;
@@ -117,6 +118,7 @@ const [play, { pause, sound }] = useSound(
                 flex items-center gap-x-4
                 ">
                     <MediaItem data={song}/>
+                    <LikeButton songId={song.id} />
                     
                 </div>
 
