@@ -141,6 +141,22 @@ const [play, { pause, sound }] = useSound(
                 >
                     <Icon size={30} className="text-black" />
                 </div>
+                <div
+              className="flex ml-4  items-center gap-x-2 w-[120px]"
+                >
+                <VolumeIcon
+                    onClick={toggleMute}
+                    className="
+                    cursor-pointer
+                    "
+                    size={34}
+                    />
+                    <Slider 
+                    value={volume}
+                    onChange={(value)=>setVolume(value)}
+                    />
+
+                </div>
             </div>
             <div className="
             hidden
